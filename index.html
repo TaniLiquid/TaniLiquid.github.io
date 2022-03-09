@@ -21,24 +21,55 @@
         text-align: center;
     }
     .logo-text{
-        font-size: 50px;
+		font-size: 50px;
     }
     .form{
-        width: 600px;
-        margin: 0 auto;
-        margin-top: 20px;
-        background-color: rgb(43, 36, 77);
-        padding: 20px;
-        -webkit-box-shadow: 0px 0px 50px -20px rgba(0, 0, 0, 1);
-        -moz-box-shadow: 0px 0px 50px -20px rgba(0, 0, 0, 1);
-        box-shadow: 0px 0px 2px 0px rgba(0, 0, 0, 1);
-        border-radius: 1%;
+		width: 600px;
+		margin: 0 auto;
+		margin-top: 20px;
+		background-color: rgb(43, 36, 77);
+		padding: 20px;
+		-webkit-box-shadow: 0px 0px 50px -20px rgba(0, 0, 0, 1);
+		-moz-box-shadow: 0px 0px 50px -20px rgba(0, 0, 0, 1);
+		box-shadow: 0px 0px 2px 0px rgba(0, 0, 0, 1);
+		border-radius: 1%;
     }
     .bottle{
-        height: 400px;
-        width: 100px;
-        margin: 0 auto;
+		height: 400px;
+		width: 100px;
+		margin: 0 auto;
     }
+	input{
+		margin-top:10px;
+		height: 38px;
+		font-size: 30px;
+		max-width: 350px;
+	}
+	button{
+		height: 38px;
+		font-size: 30px;
+		width: 160px;
+	}
+	select{
+		height: 38px;
+		font-size: 30px;
+	}
+	textarea{
+		height: 300px;
+		font-size:30px;
+		max-width: 700px;
+		max-height: 300px;
+		margin-top:10px;
+	}
+	.button{
+		width:160px;
+		margin:auto;
+		}
+	option{
+		height: 38px;
+		font-size:30px;
+		}
+
     @media only screen and (max-width:1000px){
         body{
             font-size:8vw
@@ -96,8 +127,10 @@
         <div class="form">
             <div class="bottle"><img class="bottle" src="bottle.png"/></div>
             <form action="https://formsubmit.io/send/0c99431c-cdfd-47a2-a9b6-2a243ce3c894">
+				<input name="_redirect" type="hidden" id="name" value="https://tanilq.ml/informacje">
                 <br><br>
-                Smak: <select name="Smak" id="" aria-placeholder="---">
+                Smak: <select name="Smak" id="">
+					<option value="">-</option>
                     <option value="Strawberry Ice Tea">Strawberry Ice Tea</option>
                     <option value="Ice Fruit">Ice Fruit</option>
                     <option value="Sunny Morning">Sunny Morning</option>
@@ -137,44 +170,39 @@
                     <option value="Exotic Fruits">Exotic Fruits</option>
                     <option value="Fruits Of Paradise">Fruits Of Paradise</option>
                     <option value="Mango Lemon Frost">Mango Lemon Frost</option>
-                    
                 </select>
-
                 <br><br>
-
                 <label>Moc: </label><select name="Pojemność" id="">
+					<option value="">-</option>
                     <option value="10ml">10 ml</option>
                     <option value="60ml">60 ml</option>
                     <option value="60ml">100 ml</option>
                 </select>
-
                 <br><br>
-
                 Moc: <select name="Moc" id="">
+					<option value="">-</option>
                     <option value="0mg">0 mg/ml</option>
                     <option value="3mg">3 mg/ml</option>
                     <option value="6mg">6 mg/ml</option>
                     <option value="9mg">9 mg/ml</option>
                     <option value="12mg">12 mg/ml</option>
+                    <option value="18mg">18 mg/ml</option>
                 </select>
-
                 <br><br>
-
                 Kontakt (e-mail): <input
                 type="email"
                 name="E-mail"
                 id="">
-                
                 <br><br>
-
-                Szczegóły: <textarea
+                Szczegóły:
+				<br><br>
+				<textarea
                 name="Szczegóły"
                 id=""
                 cols="30"
                 rows="10"></textarea>
-                
                 <br><br>
-
+				<input name="_formsubmit_id" type="text" style="display:none">
                 <!--Zamów-->
                 <div class="button">
                 <button
