@@ -1,1 +1,118 @@
+<html>
+<head>
+<meta charset="utf-8">
+<style>
+    body{
+        color: #fff;
+        background-color: rgb(49, 42, 83);
+        margin:0;
+        padding:0;
+        font-size:30px
+    }
+    header{
+        background-color: rgb(36, 31, 61);
+        height: 70px;
+        -webkit-box-shadow: 0px 0px 50px -20px rgba(0, 0, 0, 1);
+        -moz-box-shadow: 0px 0px 50px -20px rgba(0, 0, 0, 1);
+        box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 1);
+    }
+    .logo{
+        padding: 5px;
+        text-align: center;
+    }
+    .logo-text{
+        font-size: 50px;
+    }
+    .form{
+        width: 600px;
+        margin: 0 auto;
+        margin-top: 20px;
+        background-color: rgb(43, 36, 77);
+        padding: 20px;
+        -webkit-box-shadow: 0px 0px 50px -20px rgba(0, 0, 0, 1);
+        -moz-box-shadow: 0px 0px 50px -20px rgba(0, 0, 0, 1);
+        box-shadow: 0px 0px 2px 0px rgba(0, 0, 0, 1);
+        border-radius: 1%;
+    }
+    .bottle{
+        height: 400px;
+        width: 100px;
+        margin: 0 auto;
+        position: absolute;
+    }
+    form{
+        margin-top: 350px;
+    }
+    @media only screen and (max-width:700px){
+        body{
+            font-size:4vw
+        }
+        header{
+            height: 20vw;
+        }
+        .logo-text{
+            font-size:8vw;
+        }
+        .form{
+            width:90%;
+        }
+    }
+</style>
+</head>
+<body>
+    <header>
+    <div class="logo">
+        <span class="logo-text">Tani LQ</span>
+    </div>
+    </header>
+    <main>
+        <div class="form">
+            <div class="bottle"><img class="bottle" src="bottle.png"/></div>
+            <form action="https://formsubmit.io/send/0c99431c-cdfd-47a2-a9b6-2a243ce3c894">
+                <br><br>
+                Smak: <select name="Smak" id="">
+                    <option value="Truskawka">Truskawka</option>
+                </select>
 
+                <br><br>
+
+                <label>Moc: </label><select name="Pojemność" id="">
+                    <option value="10ml">10 ml</option>
+                    <option value="60ml">60 ml</option>
+                </select>
+
+                <br><br>
+
+                Moc: <select name="Moc" id="">
+                    <option value="0mg">0 mg/ml</option>
+                    <option value="3mg">3 mg/ml</option>
+                    <option value="6mg">6 mg/ml</option>
+                    <option value="9mg">9 mg/ml</option>
+                    <option value="12mg">12 mg/ml</option>
+                </select>
+
+                <br><br>
+
+                Kontakt (e-mail): <input
+                type="email"
+                name="E-mail"
+                id="">
+                
+                <br><br>
+
+                Szczegóły: <textarea
+                name="Szczegóły"
+                id=""
+                cols="30"
+                rows="10"></textarea>
+                
+                <br><br>
+
+                <!--Zamów-->
+                <button
+                type="submit">Zamów</button>
+            </form>
+        </div>
+    </main>
+</body>
+</html>
