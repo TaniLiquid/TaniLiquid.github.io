@@ -38,14 +38,10 @@
         height: 400px;
         width: 100px;
         margin: 0 auto;
-        position: absolute;
     }
-    form{
-        margin-top: 350px;
-    }
-    @media only screen and (max-width:700px){
+    @media only screen and (max-width:1000px){
         body{
-            font-size:4vw
+            font-size:8vw
         }
         header{
             height: 20vw;
@@ -55,6 +51,37 @@
         }
         .form{
             width:90%;
+        }
+        input{
+            margin-top:4vw;
+            height: 10vw;
+            font-size: 8vw;
+            max-width: 88vw;
+        }
+        button{
+            height: 10vw;
+            font-size: 8vw;
+            width: 35vw;
+        }
+        select{
+            height: 10vw;
+            font-size: 8vw;
+        }
+        textarea{
+            height: 10vw;
+            font-size: 8vw;
+            max-width: 88vw;
+            height: 50vw;
+            max-height: 50vw;
+            margin-top: 4vw;
+        }
+        .button{
+            width:35vw;
+            margin:auto;
+        }
+        option{
+            height: 10vw;
+            font-size: 8vw;
         }
     }
 </style>
@@ -70,8 +97,47 @@
             <div class="bottle"><img class="bottle" src="bottle.png"/></div>
             <form action="https://formsubmit.io/send/0c99431c-cdfd-47a2-a9b6-2a243ce3c894">
                 <br><br>
-                Smak: <select name="Smak" id="">
-                    <option value="Truskawka">Truskawka</option>
+                Smak: <select name="Smak" id="" aria-placeholder="---">
+                    <option value="Strawberry Ice Tea">Strawberry Ice Tea</option>
+                    <option value="Ice Fruit">Ice Fruit</option>
+                    <option value="Sunny Morning">Sunny Morning</option>
+                    <option value="Lemon Ice">Lemon Ice</option>
+                    <option value="Cactus Lemon Frost">Cactus Lemon Frost</option>
+                    <option value="Lemon Lemonade">Lemon Lemonade</option>
+                    <option value="Grape Aloe">Grape Aloe</option>
+                    <option value="Sunny Coctail">Sunny Coctail</option>
+                    <option value="Energizer">Energizer</option>
+                    <option value="Mango Ice">Mango Ice</option>
+                    <option value="Camel Flowers">Camel Flowers</option>
+                    <option value="Cranberry Yoghurt">Cranberry Yoghurt</option>
+                    <option value="Caramel Cookie">Caramel Cookie</option>
+                    <option value="Mandarin">Mandarin</option>
+                    <option value="Sour Raspberry">Sour Raspberry</option>
+                    <option value="Apple Pie">Apple Pie</option>
+                    <option value="Strawberry Shake">Strawberry Shake</option>
+                    <option value="Happy Day">Happy Day</option>
+                    <option value="Toffee Cookie">Toffee Cookie</option>
+                    <option value="Mango Aloe Frost">Mango Aloe Frost</option>
+                    <option value="Sweet and Sour">Sweet and Sour</option>
+                    <option value="Lemon Aloe Frost">Lemon Aloe Frost</option>
+                    <option value="Frozen Coffee">Frozen Coffee</option>
+                    <option value="Asian Garden">Asian Garden</option>
+                    <option value="Surprise">Surprise</option>
+                    <option value="Grape Apple Frost">Grape Apple Frost</option>
+                    <option value="Summer Taste">Summer Taste</option>
+                    <option value="Peach Ice Tea">Peach Ice Tea</option>
+                    <option value="Sweet Mango">Sweet Mango</option>
+                    <option value="Ice Cream">Ice Cream</option>
+                    <option value="Juicy Pear">Juicy Pear</option>
+                    <option value="Vanilla Tobacco">Vanilla Tobacco</option>
+                    <option value="Dragon Fruit Mango">Dragon Fruit Mango</option>
+                    <option value="Lemon Grapefruits Frost">Lemon Grapefruits Frost</option>
+                    <option value="Sweet Mint">Sweet Mint</option>
+                    <option value="Grapefruit Breeze">Grapefruit Breeze</option>
+                    <option value="Exotic Fruits">Exotic Fruits</option>
+                    <option value="Fruits Of Paradise">Fruits Of Paradise</option>
+                    <option value="Mango Lemon Frost">Mango Lemon Frost</option>
+                    
                 </select>
 
                 <br><br>
@@ -79,6 +145,7 @@
                 <label>Moc: </label><select name="Pojemność" id="">
                     <option value="10ml">10 ml</option>
                     <option value="60ml">60 ml</option>
+                    <option value="60ml">100 ml</option>
                 </select>
 
                 <br><br>
@@ -109,8 +176,10 @@
                 <br><br>
 
                 <!--Zamów-->
+                <div class="button">
                 <button
                 type="submit">Zamów</button>
+                </div>
             </form>
         </div>
     </main>
